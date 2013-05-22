@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="fileNames" msprop:Generator_TableClassName="fileNamesDataTable" msprop:Generator_TableVarName="tablefileNames" msprop:Generator_TablePropName="fileNames" msprop:Generator_RowDeletingName="fileNamesRowDeleting" msprop:Generator_RowChangingName="fileNamesRowChanging" msprop:Generator_RowEvHandlerName="fileNamesRowChangeEventHandler" msprop:Generator_RowDeletedName="fileNamesRowDeleted" msprop:Generator_UserTableName="fileNames" msprop:Generator_RowChangedName="fileNamesRowChanged" msprop:Generator_RowEvArgName="fileNamesRowChangeEvent" msprop:Generator_RowClassName="fileNamesRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" minOccurs="0" />
+              <xs:element name="file_path" msprop:Generator_ColumnVarNameInTable="columnfile_path" msprop:Generator_ColumnPropNameInRow="file_path" msprop:Generator_ColumnPropNameInTable="file_pathColumn" msprop:Generator_UserColumnName="file_path" type="xs:string" minOccurs="0" />
+              <xs:element name="file_name" msprop:Generator_ColumnVarNameInTable="columnfile_name" msprop:Generator_ColumnPropNameInRow="file_name" msprop:Generator_ColumnPropNameInTable="file_nameColumn" msprop:Generator_UserColumnName="file_name" type="xs:string" minOccurs="0" />
+              <xs:element name="file_length" msprop:Generator_ColumnVarNameInTable="columnfile_length" msprop:Generator_ColumnPropNameInRow="file_length" msprop:Generator_ColumnPropNameInTable="file_lengthColumn" msprop:Generator_UserColumnName="file_length" type="xs:long" minOccurs="0" />
+              <xs:element name="file_hashCode" msprop:Generator_ColumnVarNameInTable="columnfile_hashCode" msprop:Generator_ColumnPropNameInRow="file_hashCode" msprop:Generator_ColumnPropNameInTable="file_hashCodeColumn" msprop:Generator_UserColumnName="file_hashCode" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:fileNames" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
